@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+body {
+  font-family: "overpass", sans-serif;
+  font-size: 1.5rem;
+  background: hsl(216, 12%, 5%);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  font-family: inherit;
+}
+p {
+  line-height: 3rem;
+}
+.main-container,
+.thank-you {
+  background-color: var(--Dark-Blue);
+  width: 28%;
+  margin: auto;
+  padding: 2.5rem;
+  color: var(--white);
+  border-radius: 3rem;
+  max-width: 600px;
+  min-width: 200px;
+}
+
+.main-container img {
+  background-color: var(--Very-Dark-Blue);
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.main-container h1 {
+  color: #ffff;
+  margin: auto;
+}
+.main-container p {
+  color: var(--Light-Grey);
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+.main-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.main-container ul li button {
+  color: var(--Very-Dark-Blue);
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: var(--Light-Grey);
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-container ul li button:hover {
+  background-color: var(--Orange);
+}
+.main-container ul li button:focus {
+  background-color: hsl(217, 12%, 63%);
+}
+.btn-submit {
+  background-color: var(--Orange);
+  color: #ffff;
+  padding: 1.2rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  border: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  background-color: #ffff;
+  color: var(--Orange);
+}
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+.thank-you p.gray {
+  color: var(--Orange);
+  background-color: hsl(213, 20%, 22%);
+  border-radius: 1.5rem;
+  padding: 0.2rem 0.5rem 0;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.thank-you h2 {
+  color: #ffff;
+  margin-bottom: 2rem;
+}
+.thank-you p {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.hidden {
+  display: none;
+}
+.attribution {
+  font-size: 40px;
+  text-align: center;
+  color: #ffff;
+  margin-top: 4rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
